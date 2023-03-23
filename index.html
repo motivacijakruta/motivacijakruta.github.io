@@ -27,6 +27,14 @@
                 align-items: center;
                 justify-content: center;
             }
+
+            .row {
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
               .nav_menu a {
                 display:inline-block;
                 color: rgb(0, 0, 0);
@@ -50,7 +58,7 @@
             }
          
              
-             CSS property for content section 
+            /* CSS property for content section */
             .columnA, .columnB, .columnC {
                 float: left;
                 width: 31%;
@@ -62,9 +70,9 @@
                 text-align:center;
             }
              
-             Media query to set website layout
-            according to screen size 
-            @media screen and (max-width:600px) {
+            /* Media query to set website layout
+            according to screen size */
+            /* @media screen and (max-width:600px) {
                 .columnA, .columnB, .columnC {
                     width: 50%;
                 }
@@ -73,7 +81,7 @@
                 .columnA, .columnB, .columnC {
                     width: 100%;
                 }
-            }
+            } */
             /* Centered text */
             .q1 {            
             position: absolute;
@@ -132,8 +140,8 @@
             display: inline-block;
             font-size: 35px;
             flex: 0 0 33%;
-            height: 290.15px;
-            width: 435.233px;
+            min-height: 290.15px;
+            min-width: 435.233px;
             margin-bottom: 5px;
             margin: 4px 2px;
             cursor: pointer;
@@ -148,8 +156,8 @@
             display: inline-block;
             font-size: 35px;
             flex: 0 0 33%;
-            height: 290.15px;
-            width: 435.233px;
+            min-height: 290.15px;
+            min-width: 435.233px;
             margin-bottom: 5px;
             margin: 4px 2px;
             cursor: pointer;
