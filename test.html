@@ -9,14 +9,12 @@
                 box-sizing: border-box;
             }
              
-            /* CSS property for header section */
             .header {
                 background-color: rgb(255, 255, 255);
                 padding: 20px;
                 text-align: center;
             }
              
-            /* CSS property for navigation menu */
             .nav_menu {
                 overflow: hidden;
                 display: flex;
@@ -35,7 +33,6 @@
                 border-left-color :rgb(255, 255, 255);
                 border-right-color :rgb(0, 0, 0);
                 border-bottom-color: white;
-                /* margin :0 auto; */
 
             }
             .nav_menu a:hover {
@@ -44,7 +41,6 @@
             }
          
              
-            /* CSS property for content section */
             .columnA, .columnB, .columnC {
                 float: left;
                 width: 31%;
@@ -66,6 +62,34 @@
             .body_sec {
             margin-left:20px;
             }
+            table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  text-align: center;
+}
+
+td, th {
+  text-align: middle;
+  border: 1px solid #dddddd;
+  padding: 6px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
             
         </style>
@@ -73,42 +97,42 @@
      
     <body>
          
-        <!-- header of website layout -->
         <div class = "header">
             <h2 style = "color:rgb(0, 0, 0);font-size:350%">
                 Tests
             </h2>
         </div>
          
-        <!-- navigation menu of website layout -->
+
         <div class = "nav_menu">
             <a href = "index.html">Motivācija</a>
             <a href = "att.html">Kā attīstīt motivāciju</a>
             <a href = "test.html">Tests</a>
             <a href = "kontakti.html">Kontakti</a>
         </div>
-
-        <div class="div">
+        <div class="row">
+         <div class="column">
+          <div class="div">
             
-                <h1 style="text-align: center;">Tests "Vai tu proti sevi motivē?"</h1>
+                <h1 style="text-align: center;">Tests "Vai tu proti sevi motivē?"<small>(prezi.com)</small></h1>
             
             <div style="font-size:20px; text-align: center;">
                 <label style="font-size:22px">1.Kā tu pierunā sevi rīkoties?</label><br>
-                <input type="checkbox" />
+                <input type="checkbox" id="cb11" />
                 <label>A-biedē sevi</label> <br>
-                <input type="checkbox" />
+                <input type="checkbox" id="cb12" />
                 <label>B-apsver, ko labu tu iegūsi</label> <br>
-                <input type="checkbox" />
+                <input type="checkbox" id="cb13"/>
                 <label>C-pakārdini sevi</label> <br>
             </div>
             <br><br><br>
             <div style="font-size:20px; text-align: center;">
                 <label style="font-size:22px">2.Kā tu rīkojies, ja tev ātri jāizlemj, vai uzņemties kādu darbu?</label><br>
-                <input type="checkbox" />
+                <input type="checkbox" id="cb21" />
                 <label>A-piekrīti bez domāšanas</label> <br>
-                <input type="checkbox" />
+                <input type="checkbox" id="cb22" />
                 <label>B-noteikti atsaki</label> <br>
-                <input type="checkbox" />
+                <input type="checkbox" id="cb23" />
                 <label>C-centies novilcināt laiku</label> <br>
             </div>
             <br><br><br>
@@ -191,9 +215,157 @@
                 <input type="checkbox" />
                 <label>C-katram, kas ir gatavs to sniegt</label> <br>
             </div>
-            </div>
+         </div>
         </div>
-         
+        </div>
+        <div class="column" ></div>
+           <table align="center">
+            <tr>
+              <th></th>
+              <th>a</th>
+              <th>b</th>
+              <th>c</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td class="checkbox">1
+              <input type="checkbox" id="tableCB11"></td>
+              <td class="checkbox">3
+              <input type="checkbox" id="tableCB12"></td>
+              <td class="checkbox">2
+              <input type="checkbox" id="tableCB13"></td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td class="checkbox">3
+              <input type="checkbox"  id="tableCB21"></td>
+              <td class="checkbox">1
+              <input type="checkbox" id="tableCB22"></td>
+              <td class="checkbox">2
+              <input type="checkbox" id="tableCB23"></td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td class="checkbox">3
+              <input type="checkbox"></td>
+              <td class="checkbox">1
+              <input type="checkbox"></td>
+              <td class="checkbox">2
+              <input type="checkbox"></td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td class="checkbox">3
+              <input type="checkbox"></td>
+              <td class="checkbox">1
+              <input type="checkbox"></td>
+              <td class="checkbox">2
+              <input type="checkbox"></td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td class="checkbox">1
+              <input type="checkbox"></td>
+              <td class="checkbox">2
+              <input type="checkbox"></td>
+              <td class="checkbox">3
+              <input type="checkbox"></td>
+            </tr>
+            <tr>
+              <th>6</th>
+              <td class="checkbox">2
+              <input type="checkbox"></td>
+              <td class="checkbox">3
+              <input type="checkbox"></td>
+              <td class="checkbox">1
+              <input type="checkbox"></td>
+            </tr>
+            <tr>
+              <th>7</th>
+              <td class="checkbox">1
+              <input type="checkbox"></td>
+              <td class="checkbox">2
+              <input type="checkbox"></td>
+              <td class="checkbox">3
+              <input type="checkbox"></td>
+            </tr>
+            <tr>
+              <th>8</th>
+              <td class="checkbox">1
+              <input type="checkbox"></td>
+              <td class="checkbox">2
+              <input type="checkbox"></td>
+              <td class="checkbox">3
+              <input type="checkbox"></td>
+            </tr>
+            <tr>
+              <th>9</th>
+              <td class="checkbox">2
+              <input type="checkbox"></td>
+              <td class="checkbox">3
+              <input type="checkbox"></td>
+              <td class="checkbox">1
+              <input type="checkbox"></td>
+            </tr>
+            <tr>
+              <th>10</th>
+              <td class="checkbox">3
+              <input type="checkbox"></td>
+              <td class="checkbox">2
+              <input type="checkbox"></td>
+              <td class="checkbox">1
+              <input type="checkbox"></td>
+            </tr>
+            
+           </table>
+           <div class="column" ></div>
+           <b style=" text-align: center; font-size: 25px;  color:rgb(177.68541187047958, 141.49680733680725, 108.0919562280178, 1);">
+               <br><br> ATBILDES
+           </b>
 
+           <p style="font-size: 20px;">
+                <b>10-12 punkti</b>-tu neesi radījis konkrētu mehānismu, kā sevi moivēt. Bieži vien tas traucē pieņemt lēmumus.<br>
+                <b>13-22 punkti</b>-tu visus notikumus sadali nozīmīgos un nenozīmīgos. Par motivāciju tu domā tikai tad, ja notikums tev ir nozīmīgs.<br>
+                <b>23-30 punkti</b>-tu stingri piedomā pie katra soļa. Sevis motivēšanā tevi var uzskatīt par meistaru.
+           </p>
+           
+        </div>
+
+        <script>
+            let checkBox11 = document.getElementById("cb11");
+            let checkBox12 = document.getElementById("cb12");
+            let checkBox13 = document.getElementById("cb13");
+
+            let TableCheckBox11 = document.getElementById("tableCB11");
+            let TableCheckBox12 = document.getElementById("tableCB12");
+            let TableCheckBox13 = document.getElementById("tableCB13");
+            
+            checkBox11.addEventListener("click", check1 => {
+                if(checkBox11.checked = "false"){
+                    TableCheckBox11.checked = "false";
+                 } else if (checkBox11.checked = "true"){
+                    TableCheckBox11.checked = "true";
+                 }
+            });
+
+            let checkBox21 = document.getElementById("cb21");
+            let checkBox22 = document.getElementById("cb22");
+            let checkBox23 = document.getElementById("cb23");
+
+            let TableCheckBox21 = document.getElementById("tableCB21");
+            let TableCheckBox22 = document.getElementById("tableCB22");
+            let TableCheckBox23 = document.getElementById("tableCB23");
+            
+            checkBox11.addEventListener("click", check1 => {
+                if(checkBox11.checked = "false"){
+                    TableCheckBox11.checked = "false";
+                 } else if (checkBox11.checked = "true"){
+                    TableCheckBox11.checked = "true";
+                 }
+            });
+            
+
+            
+        </script>
     </body>
 </html>   
